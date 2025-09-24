@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECSHOP - Ноутбуки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+        <div class="nav-brand">TECSHOP</div>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Головна</a></li>
+            <li><a href="laptops.html" class="nav-link">Ноутбуки</a></li>
+            <li><a href="phones.html" class="nav-link">Телефони</a></li>
+            <li><a href="accessories.html" class="nav-link">Аксесуари</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Пошук...">
+        </div>
+    </nav>
+</header>
+
+<main>
+<section class="products">
+    <h2 class="section-title">Ноутбуки</h2>
+    <div class="products-grid"></div>
+</section>
+
+<!-- Cart -->
+<div id="cart-modal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close" onclick="closeCart()">&times;</span>
+        <h2>Кошик</h2>
+        <div class="cart-items"></div>
+        <div class="cart-total"><strong>Загальна сума: 0 грн</strong></div>
+        <button class="order-btn" onclick="showOrderForm()">Замовити</button>
+    </div>
+</div>
+
+<div id="order-modal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close" onclick="closeOrderForm()">&times;</span>
+        <h2>Оформлення замовлення</h2>
+        <form class="order-form">
+            <input type="email" placeholder="Type your email" required>
+            <input type="text" placeholder="Type your name" required>
+            <input type="tel" placeholder="Type your phone number" required>
+            <input type="text" placeholder="Type your address" required>
+            <div class="form-section">
+                <h3>Загальна сума:</h3>
+                <h3>Список товарів:</h3>
+            </div>
+            <button type="submit" class="submit-btn">Замовити</button>
+        </form>
+    </div>
+</div>
+</main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-brand">TECSHOP</div>
+        <div class="footer-contact">
+            <span>тел.: +380123456789</span>
+            <span>e-mail: info@tecshop.ua</span>
+            <span>Адреса: м. Київ, вул. Технічна 12</span>
+            <span>Години роботи: 9:00 - 18:00</span>
+        </div>
+    </div>
+</footer>
+
+<button class="cart-btn" onclick="openCart()">🛒</button>
+<script src="laptops.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

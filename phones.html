@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECSHOP - Смартфони</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="phones.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">TECSHOP</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Головна</a></li>
+                <li><a href="categories.html" class="nav-link">Каталог</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Пошук...">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2 class="section-title">Смартфони</h2>
+            <div class="products-grid"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">TECSHOP</div>
+            <div class="footer-links">
+                <a href="index.html">Головна</a>
+                <a href="categories.html">Каталог</a>
+                <a href="#">Про нас</a>
+                <a href="#">Доставка</a>
+                <a href="#">Контакти</a>
+            </div>
+            <div class="footer-contact">
+                <span>тел.: +380 00 000 00 00</span>
+                <span>email: info@tecshop.ua</span>
+            </div>
+        </div>
+    </footer>
+
+    <button class="cart-btn" onclick="openCart()">🛒</button>
+    <div id="cart-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Кошик</h2>
+            <div class="cart-items"></div>
+            <div class="cart-total"><strong>Загальна сума: 0 грн</strong></div>
+            <button class="order-btn" onclick="showOrderForm()">Замовити</button>
+        </div>
+    </div>
+
+    <div id="order-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" onclick="closeOrderForm()">&times;</span>
+            <h2>Оформлення замовлення</h2>
+            <form class="order-form">
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Ім'я" required>
+                <input type="tel" placeholder="Телефон" required>
+                <input type="text" placeholder="Адреса" required>
+                <div class="form-section"></div>
+                <button type="submit" class="submit-btn">Замовити</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

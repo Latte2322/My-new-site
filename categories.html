@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECSHOP - Каталог</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">TECSHOP</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Головна</a></li>
+                <li><a href="categories.html" class="nav-link">Каталог</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Пошук...">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="categories">
+            <div class="categories-grid">
+                <div class="category-card">
+                    <h3>Ноутбуки</h3>
+                    <p>Потужні ноутбуки для роботи та ігор</p>
+                    <a href="laptops.html"><button class="entry-btn">Переглянути</button></a>
+                </div>
+                <div class="category-card">
+                    <h3>Смартфони</h3>
+                    <p>Сучасні смартфони для будь-яких потреб</p>
+                    <a href="phones.html"><button class="entry-btn">Переглянути</button></a>
+                </div>
+                <div class="category-card">
+                    <h3>Аксесуари</h3>
+                    <p>Мишки, клавіатури, навушники та інше</p>
+                    <a href="accessories.html"><button class="entry-btn">Переглянути</button></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">TECSHOP</div>
+            <div class="footer-links">
+                <a href="index.html">Головна</a>
+                <a href="categories.html">Каталог</a>
+                <a href="#">Про нас</a>
+                <a href="#">Доставка</a>
+                <a href="#">Контакти</a>
+            </div>
+            <div class="footer-contact">
+                <span>тел.: +380 00 000 00 00</span>
+                <span>email: info@tecshop.ua</span>
+            </div>
+        </div>
+    </footer>
+
+    <button class="cart-btn" onclick="openCart()">🛒</button>
+</body>
+
+</html>
