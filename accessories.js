@@ -1,6 +1,4 @@
 
-
-// Масив продуктів з коротким описом та посиланням на повний опис
 const products = [
     {
         name: "Навушники",
@@ -25,7 +23,6 @@ const products = [
     }
 ];
 
-// Виведення карток
 const container = document.querySelector('.products-grid');
 
 products.forEach(product => {
@@ -43,14 +40,12 @@ products.forEach(product => {
     container.appendChild(card);
 });
 
-// Додавання в кошик
 function addToCart(name, price) {
     cart.push({name, price});
     updateCart();
     alert(name + " додано в кошик!");
 }
 
-// Оновлення кошика
 function updateCart() {
     const cartItems = document.querySelector('.cart-items');
     const cartTotal = document.querySelector('.cart-total strong');
@@ -71,7 +66,6 @@ function updateCart() {
     cartTotal.textContent = `Загальна сума: ${total} грн`;
 }
 
-// Видалення з кошика
 function removeFromCart(index) {
     cart.splice(index, 1);
     updateCart();

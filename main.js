@@ -55,13 +55,7 @@ function closeOrderForm() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const searchInputs = document.querySelectorAll('.search-input');
-    searchInputs.forEach(input => {
-        input.addEventListener('input', e => {
-            const query = e.target.value.toLowerCase();
-            console.log("Пошук:", query); 
-        });
-    });
+
 
     const orderForm = document.querySelector('.order-form');
     if (orderForm) {

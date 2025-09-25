@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <nav class="navbar">
             <div class="nav-brand">TECSHOP</div>
@@ -18,22 +17,17 @@
                 <li><a href="laptops.html" class="nav-link">Ноутбуки</a></li>
                 <li><a href="categories.html" class="nav-link">Каталог</a></li>
             </ul>
-            <div class="search-container">
-                <input type="text" class="search-input" placeholder="Пошук...">
-            </div>
+            
         </nav>
     </header>
 
-    <!-- Products Section -->
     <main>
         <section class="products">
             <h2 class="section-title">Аксесуари</h2>
             <div class="products-grid">
-                <!-- Картки додаватиме accessories.js -->
             </div>
         </section>
 
-        <!-- Cart Modal -->
         <div id="cart-modal" class="modal hidden">
             <div class="modal-content">
                 <span class="close" onclick="closeCart()">&times;</span>
@@ -44,7 +38,6 @@
             </div>
         </div>
 
-        <!-- Order Form Modal -->
         <div id="order-modal" class="modal hidden">
             <div class="modal-content">
                 <span class="close" onclick="closeOrderForm()">&times;</span>
@@ -64,7 +57,6 @@
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">TECSHOP</div>
@@ -77,10 +69,8 @@
         </div>
     </footer>
 
-    <!-- Cart Button -->
     <button class="cart-btn" onclick="openCart()">🛒</button>
 
-    <!-- JS -->
     <script src="accessories.js"></script>
     <script src="main.js"></script>
 </body>
