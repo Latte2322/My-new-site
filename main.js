@@ -1,4 +1,3 @@
-// Sticky Cart & Modals
 function openCart() {
     const modal = document.getElementById('cart-modal');
     if (modal) {
@@ -28,7 +27,6 @@ function showOrderForm() {
         return;
     }
 
-    // Створюємо список товарів для форми
     let productsList = "";
     let total = 0;
     cartItems.forEach(item => {
@@ -56,18 +54,15 @@ function closeOrderForm() {
     }
 }
 
-// Пошук по всіх сторінках
 document.addEventListener('DOMContentLoaded', () => {
     const searchInputs = document.querySelectorAll('.search-input');
     searchInputs.forEach(input => {
         input.addEventListener('input', e => {
             const query = e.target.value.toLowerCase();
             console.log("Пошук:", query); 
-            // Тут можна додати реальну фільтрацію карток
         });
     });
 
-    // Обробка форми замовлення
     const orderForm = document.querySelector('.order-form');
     if (orderForm) {
         orderForm.addEventListener('submit', e => {
