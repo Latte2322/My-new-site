@@ -59,17 +59,6 @@ main {
     opacity: 0.7;
 }
 
-.search-container {
-    display: flex;
-}
-
-.search-input {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 20px;
-    background-color: white;
-    width: 200px;
-}
 
 .hero {
     display: flex;
@@ -152,26 +141,6 @@ main {
     transform: translateY(-5px);
 }
 
-.search-bar {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.main-search {
-    padding: 1rem 2rem;
-    border: 2px solid #000;
-    border-radius: 25px;
-    width: 100%;
-    max-width: 500px;
-    font-size: 1rem;
-    background-color: #333;
-    color: white;
-}
-
-.main-search::placeholder {
-    color: #ccc;
-}
-
 .categories-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -231,7 +200,6 @@ main {
     gap: 2rem;
 }
 
-/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
@@ -274,7 +242,6 @@ main {
     opacity: 0.7;
 }
 
-/* Cart Styles */
 .cart-items {
     margin: 2rem 0;
 }
@@ -312,7 +279,6 @@ main {
     transform: translateY(-2px);
 }
 
-/* Order Form */
 .order-form {
     display: flex;
     flex-direction: column;
@@ -340,7 +306,6 @@ main {
     margin-bottom: 0.5rem;
 }
 
-/* Footer */
 .footer {
     background-color: #000;
     color: white;
@@ -368,7 +333,6 @@ main {
     gap: 2rem;
 }
 
-/* Cart Button */
 .cart-btn {
     position: fixed;
     bottom: 2rem;
@@ -390,12 +354,10 @@ main {
     transform: scale(1.1);
 }
 
-/* Utility Classes */
 .hidden {
     display: none;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -406,11 +368,6 @@ main {
     .nav-menu {
         gap: 1rem;
     }
-
-    .search-input {
-        width: 150px;
-    }
-
     .hero-card {
         margin: 1rem;
         padding: 2rem;
@@ -437,16 +394,16 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 90vh;
-    background-color: white; /* фон білий */
+    background-color: white; 
     position: relative;
-    color: black; /* текст чорний */
+    color: black; 
     text-align: center;
     padding: 2rem;
 }
 
 .hero::after {
     content: '';
-    display: none; /* прибираємо затемнення */
+    display: none; 
 }
 
 .hero-content h1 {
@@ -519,7 +476,6 @@ main {
     color: #ccc;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
